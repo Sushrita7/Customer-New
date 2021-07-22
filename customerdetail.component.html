@@ -1,0 +1,163 @@
+
+
+<html>
+<body>
+    <nav class="mainmenu">
+        <div class="sidebar-logo">
+          CUSTOMER PORTAL
+          </div>
+        <ul>
+          <li class="dropdown" ><a href="#"><i class="fa fa-users fa-2x" style="padding-right: 10px;"></i>Profile <span>&rsaquo;</span></a>
+          <ul>
+            <li><a href="#">View</a></li>
+            <li><a href="#">Edit</a></li>
+          </ul>
+          </li>
+          <li class="dropdown"><a href="#"> <i class="fa fa-laptop fa-2x" style="padding-right: 10px;"></i>Dashboard <span>&rsaquo;</span></a>
+             <ul>
+                <li><a href="#">Inquiry data</a></li>
+                <li><a href="#">Sales order data</a></li>
+                <li><a href="#">List of Delivery</a></li>
+              </ul>
+          </li>
+          <li class="dropdown"><a href="#"><i class="fa fa-bar-chart-o fa-2x" style="padding-right: 10px;"></i> Finanicial sheet <span>&rsaquo;</span></a>
+             <ul>
+             <li><a href="#">Invoice details</a></li>
+             <li><a href="#">Payments and aging</a></li>
+             <li><a href="#">Credit/Debit memo</a></li>
+             <li><a href="#">Overall sales data</a></li>
+             </ul>
+          </li>
+          <li><a href="#"> <i class="fa fa-upload fa-2x" style="padding-right: 10px;"></i>Master Data Upload</a></li>
+    
+          
+        </ul>
+    
+      </nav>
+      <nav >
+      <ul>
+       
+         <a href="#" class="logout">
+           <div style="display: flex;">
+             <div style=" padding-right: 10px;"><i class="fa fa-power-off fa-2x"></i></div>
+             <div> Logout</div>
+           </div>
+               
+         </a>
+    
+       
+     </ul>
+    </nav>
+    <div>
+    <h1 style="margin-left: 21.5%;">Profile Details</h1>
+<div id="card">
+  
+	
+    
+    <div >
+    <div class="column">
+      <div style="margin-top: 30px;display:flex;"> 
+    <p style="margin-right: 10px;"> First Name:</p>
+     <p>{{fname}}
+    </p> 
+       </div>
+
+    <div style="margin-top: 30px;display:flex;"> 
+    <p style="margin-right: 10px;"> Last Name:</p>
+     <p>{{lname}}
+    </p> 
+       </div>
+
+    <div style="margin-top: 30px;display:flex;"> 
+        <p style="margin-right: 10px;"> City:</p>
+         <p>{{city}}
+        </p> 
+    </div>
+
+    <div style="margin-top: 30px;display:flex;"> 
+      <p style="margin-right: 10px;"> Phone:</p>
+       <p>{{mobile}}
+      </p> 
+    </div>
+  </div>
+  <div class="column" style="margin-left: 17%;">
+    <div style="margin-top: 30px;display:flex;"> 
+      <p style="margin-right: 10px;"> Street:</p>
+       <p>{{street}}
+      </p> 
+      </div>
+      
+      <div style="margin-top: 30px;display:flex;"> 
+        <p style="margin-right: 10px;"> State:</p>
+         <p>{{state}}
+        </p> 
+      </div>
+
+      <div style="margin-top: 30px;display:flex;"> 
+        <p style="margin-right: 10px;"> Pincode:</p>
+         <p>{{pincode}}
+        </p> 
+        </div>
+
+        <div style="margin-top: 30px;display:flex;"> 
+          <p style="margin-right: 10px;"> Country:</p>
+           <p>{{country}}
+          </p> 
+        </div>  
+  </div>
+  </div>
+
+</div>
+</div>
+<nav class="mainmenu">
+  <div class="sidebar-logo">
+    CUSTOMER PORTAL
+    </div>
+  <ul>
+    <li class="dropdown"  ><a><i class="fa fa-users fa-2x" style="padding-right: 10px;"></i>Profile <span>&rsaquo;</span></a>
+    <ul>
+      <li><a routerLink="/customerdetail">View</a></li>
+      <li><a routerLink="/customeredit">Edit</a></li>
+    </ul>
+    </li>
+    <li class="dropdown"><a> <i class="fa fa-laptop fa-2x" style="padding-right: 10px;"></i>Dashboard <span>&rsaquo;</span></a>
+       <ul>
+          <li><a routerLink="/inquiry">Inquiry data</a></li>
+          <li><a routerLink="/salesorder">Sales order data</a></li>
+          <li><a routerLink="/delivery">List of Delivery</a></li>
+        </ul>
+    </li>
+    <li class="dropdown"><a><i class="fa fa-bar-chart-o fa-2x" style="padding-right: 10px;"></i> Finanicial sheet <span>&rsaquo;</span></a>
+       <ul>
+       <li><a routerLink="/invoice">Invoice details</a></li>
+       <li><a routerLink="/getpayment">Payments and aging</a></li>
+       <li><a routerLink="/creditdebit">Credit/Debit memo</a></li>
+       <li><a routerLink="/overallsales">Overall sales data</a></li>
+       </ul>
+    </li>
+    <li><a routerLink="/masterdata"> <i class="fa fa-upload fa-2x" style="padding-right: 10px;"></i>Master Data Upload</a></li>
+
+    
+  </ul>
+
+</nav>
+<nav >
+<ul>
+ 
+   <a href="#" class="logout">
+     <div style="display: flex;">
+       <div style="margin-top: 5px; padding-right: 10px;"><i class="fa fa-power-off fa-2x"></i></div>
+       <div> Logout</div>
+     </div>
+         
+   </a>
+
+ 
+</ul>
+</nav>
+
+</body>
+
+</html>
+
+

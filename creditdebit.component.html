@@ -1,0 +1,109 @@
+
+<html>
+  <head>
+  </head>
+  <body>
+    
+    
+    <div class="sc" style="margin-left: 20%;overflow-y: scroll;height: 100%;overflow-x: hidden;">        
+      <div *ngIf="credit" style="margin-top: auto;margin-right:5% ;">
+      <h2 style="text-align: center;">Credit</h2>
+      <table datatable class="row-border hover" class="content-table" id="example" style="padding: 30px;">
+        <thead style="background-color: rgb(5, 184, 255);" > 
+          <tr>
+            <th>Fiscal year</th>
+            <th>Clearing date</th>
+            <th>Document number</th>
+            <th >Currency</th>
+          
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let knhs of credit" style="background-color: white;text-align: center;">
+            <td>{{knhs.GJAHR._text}}</td>
+            <td>{{knhs.AUGDT._text}}</td>
+            <td>{{knhs.AUGBL._text}}</td>
+            <td>{{knhs.PSWSL._text}}</td>
+          </tr>
+        </tbody>
+      </table>
+      
+    </div>
+    <div *ngIf="debit"  style="margin-top: auto;margin-right: 5%;">
+      <h2 style="text-align: center;">Debit</h2>
+      <table datatable class="row-border hover" id="example" style="padding: 30px;">
+        <thead style="background-color:   rgb(5, 184, 255)">
+          <tr>
+            <th>Fiscal year</th>
+            <th>Clearing Date</th>
+            <th>Document Number</th>
+            <th >Currency</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let knhs of debit" style="background-color:white;text-align: center;">
+            <td>{{+knhs.GJAHR._text}}</td>
+            <td>{{knhs.AUGDT._text}}</td>
+            <td>{{knhs.AUGBL._text}}</td>
+            <td>{{knhs.PSWSL._text}}</td>
+            </tr>
+        </tbody>
+      </table>
+      
+    </div>
+  </div>
+  
+  <nav class="mainmenu">
+    <div class="sidebar-logo">
+      CUSTOMER PORTAL
+      </div>
+    <ul>
+      <li class="dropdown"  ><a><i class="fa fa-users fa-2x" style="padding-right: 10px;"></i>Profile <span>&rsaquo;</span></a>
+      <ul>
+        <li><a routerLink="/customerdetail">View</a></li>
+        <li><a routerLink="/customeredit">Edit</a></li>
+      </ul>
+      </li>
+      <li class="dropdown"><a> <i class="fa fa-laptop fa-2x" style="padding-right: 10px;"></i>Dashboard <span>&rsaquo;</span></a>
+         <ul>
+            <li><a routerLink="/inquiry">Inquiry data</a></li>
+            <li><a routerLink="/salesorder">Sales order data</a></li>
+            <li><a routerLink="/delivery">List of Delivery</a></li>
+          </ul>
+      </li>
+      <li class="dropdown"><a><i class="fa fa-bar-chart-o fa-2x" style="padding-right: 10px;"></i> Finanicial sheet <span>&rsaquo;</span></a>
+         <ul>
+         <li><a routerLink="/invoice">Invoice details</a></li>
+         <li><a routerLink="/getpayment">Payments and aging</a></li>
+         <li><a routerLink="/creditdebit">Credit/Debit memo</a></li>
+         <li><a routerLink="/overallsales">Overall sales data</a></li>
+         </ul>
+      </li>
+      <li><a routerLink="/masterdata"> <i class="fa fa-upload fa-2x" style="padding-right: 10px;"></i>Master Data Upload</a></li>
+
+      
+    </ul>
+
+  </nav>
+  <nav >
+  <ul>
+   
+     <a href="#" class="logout">
+       <div style="display: flex;">
+         <div style="padding-right: 10px;"><i class="fa fa-power-off fa-2x"></i></div>
+         <div> Logout</div>
+       </div>
+           
+     </a>
+
+   
+ </ul>
+</nav>
+      
+  </body>
+  
+  </html>
+  
+  
+  

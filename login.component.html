@@ -1,0 +1,27 @@
+
+<body style="background:rgb(90, 202, 247);
+overflow: hidden;">
+<div class="column" style="height: 97vh;float: left;width: 100%;margin-right: 10%;">
+    <div class="wrapper fadeInDown" style="overflow: hidden;">
+
+      
+    <div id="formContent">
+      <div class="imgcontainer">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWPi71XZ62c1dJ0aBVKZWIx-zPS9uyQjoFzQ&usqp=CAU" alt="Avatar" class="avatar">
+      </div>
+      <!-- <img src="Cusotmer-Portal-Logo (1).jpg"> -->
+      <h2 class='h2' style="margin-top: 0%"> CUSTOMER PORTAL</h2>
+      <br>
+      <br>
+      <form #f="ngForm"(ngSubmit)="getresult(f)">
+        <input type="text" id="login" class="fadeIn second" placeholder="Username" name="uname" ngModel #name="ngModel">
+        <input type="password" id="password" class="fadeIn third"  placeholder="Password" name="pwd" ngModel #pwd="ngModel">
+    <button type="submit" class="loginn">Login</button>
+      </form>
+  
+    </div>
+  </div>
+</div>
+  <div ></div>
+  <img  style="margin-right: 10%;"   src="https://website-assets-fd.freshworks.com/attachments/cjsoiv7y1017qfyg0ftxqyb3f-group-71.svg" alt="">
+  <a routerLink="/dashboard"></a> 

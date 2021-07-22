@@ -1,0 +1,103 @@
+<html>
+    <body>
+        <div style="margin-left: 20%;overflow-y: scroll;height: 100%;overflow-x: hidden;">        
+            <div *ngIf="sales" style="margin-top:15px;margin-right:5%;">
+            <h2 style="text-align: center;margin-bottom: 10px;">Sales Order Data</h2>
+            <table datatable class="row-border hover" id="example" style="padding: 30px;">
+              <thead style="background-color: rgb(5, 184, 255)">
+                <tr>
+        
+                  <th>Document number</th>
+                  <!-- <th>Item number</th> -->
+                  <!-- <th>Material</th> -->
+                  <!-- <th>Short text</th> -->
+                  <!-- <th>Document type</th> -->
+                  <!-- <th>Document date</th> -->
+                  <th>Required Quantity</th>
+                  <th>Purchase Number</th>
+                  <!-- <th > Name</th> -->
+                  <!-- <th>Exchange rate</th> -->
+                  <th>Sold to</th>
+                  <th> Delivery quantity</th>
+                  <!-- <th >Net price</th> -->
+                  <th>Division</th>
+                  <th>Document status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let knhs of sales" style="background-color:  white;text-align: center;">
+                  <td>{{knhs.SD_DOC._text}}</td>
+                  <!-- <td>{{knhs.ITM_NUMBER._text}}</td> -->
+                  <!-- <td>{{knhs.MATERIAL._text}}</td> -->
+                  <!-- <td>{{knhs.SHORT_TEXT._text}}</td> -->
+                  <!-- <td>{{knhs.DOC_TYPE._text}}</td> -->
+                  <!-- <td>{{+knhs.DOC_DATE._text}}</td> -->
+                  <td>{{knhs.REQ_QTY._text}}</td>
+                  <td>{{knhs.PURCH_NO._text}}</td>
+                  <!-- <td>{{knhs.NAME._text}}</td> -->
+                  <!-- <td>{{knhs.EXCHG_RATE._text}}</td> -->
+                  <td>{{knhs.SOLD_TO._text}}</td>
+                  <td>{{+knhs.DLV_QTY._text}}</td>
+                
+                  <!-- <td>{{knhs.NET_PRICE._text}}</td> -->
+                  <td>{{knhs.DIVISION._text}}</td>
+                  <td>{{knhs.DOC_STATUS._text}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+            
+        </div>
+        <nav class="mainmenu">
+          <div class="sidebar-logo">
+            CUSTOMER PORTAL
+            </div>
+          <ul>
+            <li class="dropdown"  ><a><i class="fa fa-users fa-2x" style="padding-right: 10px;"></i>Profile <span>&rsaquo;</span></a>
+            <ul>
+              <li><a routerLink="/customerdetail">View</a></li>
+              <li><a routerLink="/customeredit">Edit</a></li>
+            </ul>
+            </li>
+            <li class="dropdown"><a> <i class="fa fa-laptop fa-2x" style="padding-right: 10px;"></i>Dashboard <span>&rsaquo;</span></a>
+               <ul>
+                  <li><a routerLink="/inquiry">Inquiry data</a></li>
+                  <li><a routerLink="/salesorder">Sales order data</a></li>
+                  <li><a routerLink="/delivery">List of Delivery</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a><i class="fa fa-bar-chart-o fa-2x" style="padding-right: 10px;"></i> Finanicial sheet <span>&rsaquo;</span></a>
+               <ul>
+               <li><a routerLink="/invoice">Invoice details</a></li>
+               <li><a routerLink="/getpayment">Payments and aging</a></li>
+               <li><a routerLink="/creditdebit">Credit/Debit memo</a></li>
+               <li><a routerLink="/overallsales">Overall sales data</a></li>
+               </ul>
+            </li>
+            <li><a routerLink="/masterdata"> <i class="fa fa-upload fa-2x" style="padding-right: 10px;"></i>Master Data Upload</a></li>
+      
+            
+          </ul>
+      
+        </nav>
+        <nav >
+        <ul>
+         
+           <a href="#" class="logout">
+             <div style="display: flex;">
+               <div style=" padding-right: 10px;"><i class="fa fa-power-off fa-2x"></i></div>
+               <div> Logout</div>
+             </div>
+                 
+           </a>
+      
+         
+       </ul>
+      </nav>
+      
+    </body>
+    
+    </html>
+    
+    
+    
