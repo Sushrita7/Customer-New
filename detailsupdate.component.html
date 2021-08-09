@@ -1,0 +1,146 @@
+<html>
+  <body>
+    <div>
+
+      <div style="margin-left: 30%;margin-bottom: 3%;">
+        <h1 style="margin-right:20% ;margin-bottom: 5%;">Edit Profile</h1>
+      <div class="card" >
+       
+        <div class="row" style="margin-top: 40px">
+          <div style="margin-right: 0;">
+          <div class="col">
+            <div class="form-group">
+              
+          
+              <label style="margin-right:5px ;text-transform: capitalize;">First Name 
+              <input type="text" [(ngModel)]="fname" style="margin-left: 10px;margin-top: 5px;">
+            </label>
+            </div>
+          </div>
+      
+          <div class="col">
+            <div class="form-group">
+              <label>Last Name
+              <input type="text" [(ngModel)]="lname" style="margin-left: 13px;margin-top: 5px;">
+            </label>
+            </div>
+          </div>
+      
+          <div class="col">
+            <div class="form-group">
+              <label >City
+              <input type="text" [(ngModel)]="city" style="margin-left: 69px;margin-top: 5px;">
+            </label>
+            </div>
+          </div>
+      
+          <div class="col">
+            <div class="form-group">
+              <label>Phone
+              <input type="text" [(ngModel)]="mobile" style="margin-left: 50px;margin-top: 5px;">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col">
+            <div class="form-group">
+              <label>Street
+              <input type="text" [(ngModel)]="street" style="margin-left: 35px;margin-top: 5px;">
+            </label>
+            </div>
+          </div>
+
+          
+          <div class="col">
+            <div class="form-group">
+              <label>State
+              <input type="text" [(ngModel)]="state" style="margin-left: 45px;margin-top: 5px;">
+            </label>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="form-group">
+              <label>Pincode
+              <input type="text" [(ngModel)]="pincode" style="margin-left: 20px;margin-top: 5px;">
+            </label>
+            </div>
+          </div>
+
+          
+          <div class="col">
+            <div class="form-group">
+              <label>Country
+              <input type="text" [(ngModel)]="country" style="margin-left: 20px;margin-top: 5px;">
+            </label>
+            </div>
+          </div>
+        </div>
+          <div class="col">
+            <button class="submit" (click)="update()">Submit</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    <!-- <div style="margin-left: 20%;">
+       firstname: <input type="text" [(ngModel)]="fname">
+       lastname: <input type="text" [(ngModel)]="lname">
+       city: <input type="text" [(ngModel)]="city">
+       phone: <input type="text" [(ngModel)]="mobile">
+       Street: <input type="text" [(ngModel)]="street">
+       State: <input type="text" [(ngModel)]="state">
+       pincode: <input type="text" [(ngModel)]="pincode">
+       country: <input type="text" [(ngModel)]="country">
+       <button (click)="update()">Save</button>
+    </div> -->
+  </div>
+    <nav class="mainmenu">
+      <div class="sidebar-logo">
+        CUSTOMER PORTAL
+        </div>
+      <ul>
+        <li class="dropdown"  ><a><i class="fa fa-users fa-2x" style="padding-right: 10px;"></i>Profile <span>&rsaquo;</span></a>
+        <ul>
+          <li><a routerLink="/customerdetail">View</a></li>
+          <li><a routerLink="/customeredit">Edit</a></li>
+        </ul>
+        </li>
+        <li class="dropdown"><a> <i class="fa fa-laptop fa-2x" style="padding-right: 10px;"></i>Dashboard <span>&rsaquo;</span></a>
+           <ul>
+              <li><a routerLink="/inquiry">Inquiry data</a></li>
+              <li><a routerLink="/salesorder">Sales order data</a></li>
+              <li><a routerLink="/delivery">List of Delivery</a></li>
+            </ul>
+        </li>
+        <li class="dropdown"><a><i class="fa fa-bar-chart-o fa-2x" style="padding-right: 10px;"></i> Finanicial sheet <span>&rsaquo;</span></a>
+           <ul>
+           <li><a routerLink="/invoice">Invoice details</a></li>
+           <li><a routerLink="/getpayment">Payments and aging</a></li>
+           <li><a routerLink="/creditdebit">Credit/Debit memo</a></li>
+           <li><a routerLink="/overallsales">Overall sales data</a></li>
+           </ul>
+        </li>
+        <li><a routerLink="/masterdata"> <i class="fa fa-upload fa-2x" style="padding-right: 10px;"></i>Master Data Upload</a></li>
+    
+        
+      </ul>
+    
+    </nav>
+    <nav >
+    <ul>
+     
+       <a href="#" class="logout">
+         <div style="display: flex;">
+           <div style=" padding-right: 10px;"><i class="fa fa-power-off fa-2x"></i></div>
+           <div> Logout</div>
+         </div>
+             
+       </a>
+    
+     
+    </ul>
+    </nav>
+    
+  </body>
+</html>

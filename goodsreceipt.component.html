@@ -1,0 +1,130 @@
+<html>
+    <body>
+        <div class="sc" style="margin-left: 20%;height: 100%;">    
+        <div *ngIf="header">    
+                <div *ngIf="header" style="margin-top: auto;margin-right:5% ;">
+                <h2 style="text-align: center;">Goods Receipt Header Data</h2>
+                <table datatable class="row-border hover" class="content-table" id="example" style="padding: 30px;">
+                  <thead style="background-color: rgb(5, 184, 255);" > 
+                    <tr>
+                        <th>Material Number</th>
+                  <th>Document Year</th>
+                  <th>Transaction event Type</th>
+                  <th>Document Date</th>
+                  <th >Posting Date</th>
+                  <th>Entry Date</th>
+                  <th>Entry Time</th>
+                  <th>Reference Doc Num</th>
+                  <th>Version for Slip</th>
+                    
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let knhs of header" style="background-color: white;text-align: center;">
+                        <td>{{knhs.MAT_DOC _text"}}</td>
+                        <td>{{knhs.DOC_YEAR._text}}</td>
+                      <td>{{knhs.TR_EV_TYPE._text}}</td>
+                      <td>{{knhs.DOC_DATE._text}}</td>
+                      <td>{{knhs.PSTNG_DATE._text}}</td>
+                      <td>{{knhs.ENTRY_DATE._text}}</td>
+                      <td>{{knhs.ENTRY_TIME._text}}</td>
+                      <td>{{knhs.REF_DOC_NO._text}}</td>
+                      <td>{{knhs.VER_GR_GI_SLIP._text}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+              </div>
+            </div>
+
+        </div>
+
+        
+        <div class="sc" style="margin-left: 20%;height: 100%;">    
+            <div *ngIf="!header">    
+            <div *ngIf="item" style="margin-top: auto;margin-right:5% ;">
+            <h2 style="text-align: center;">Goods Receipt Item Data</h2>
+            <table datatable class="row-border hover" class="content-table" id="example" style="padding: 30px;">
+              <thead style="background-color: rgb(5, 184, 255);" > 
+                <tr>
+                    <th>Material Number</th>
+                  <th>Document Year</th>
+                  <th>Transaction event Type</th>
+                  <th>Document Date</th>
+                  <th >Posting Date</th>
+                  <th>Entry Date</th>
+                  <th>Entry Time</th>
+                  <th>Reference Doc Num</th>
+                  <th>Version for Slip</th>
+                
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let knhs of head"(click)="showitem(knhs.MAT_DOC._text)" style="background-color: white;text-align: center;">
+                  <td>{{knhs.MAT_DOC _text"}}</td>
+                    <td>{{knhs.DOC_YEAR._text}}</td>
+                  <td>{{knhs.TR_EV_TYPE._text}}</td>
+                  <td>{{knhs.DOC_DATE._text}}</td>
+                  <td>{{knhs.PSTNG_DATE._text}}</td>
+                  <td>{{knhs.ENTRY_DATE._text}}</td>
+                  <td>{{knhs.ENTRY_TIME._text}}</td>
+                  <td>{{knhs.REF_DOC_NO._text}}</td>
+                  <td>{{knhs.VER_GR_GI_SLIP._text}}</td>
+                  <!-- <td>{{knhs.BEWTP._text}}</td> -->
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+        
+
+    </div>
+        </div>
+        <nav class="mainmenu">
+            <div class="sidebar-logo">
+              VENDOR PORTAL
+              </div>
+            <ul>
+              <li class="dropdown"  ><a><i class="fa fa-users fa-2x" style="padding-right: 10px;"></i>Profile <span>&rsaquo;</span></a>
+              <ul>
+                <li><a routerLink="/details">View</a></li>
+                <li><a routerLink="/detailsupdate">Edit</a></li>
+              </ul>
+              </li>
+              <li class="dropdown"><a> <i class="fa fa-laptop fa-2x" style="padding-right: 10px;"></i>Dashboard <span>&rsaquo;</span></a>
+                 <ul>
+                    <li><a routerLink="/request">Request for Quotation</a></li>
+                    <li><a routerLink="/purchase">Purchase Order</a></li>
+                    <li><a routerLink="/goods">Goods Receipt</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown"><a><i class="fa fa-bar-chart-o fa-2x" style="padding-right: 10px;"></i> Finanicial sheet <span>&rsaquo;</span></a>
+                 <ul>
+                 <li><a routerLink="/invoicee">Invoice details</a></li>
+                 <li><a routerLink="/payment">Payments and aging</a></li>
+                 <li><a routerLink="/creditmemo">Credit memo</a></li>
+                 <li><a routerLink="/debitmemo">Debit memo</a></li>
+                 </ul>
+              </li>
+             
+              
+            </ul>
+        
+          </nav>
+          <nav >
+          <ul>
+           
+             <a href="#" class="logout">
+               <div style="display: flex;">
+                 <div style="padding-right: 10px;"><i class="fa fa-power-off fa-2x"></i></div>
+                 <div> Logout</div>
+               </div>
+                   
+             </a>
+        
+           
+         </ul>
+        </nav>
+         
+    </body>
+</html>

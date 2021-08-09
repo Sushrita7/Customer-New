@@ -1,0 +1,129 @@
+
+
+<html>
+    <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      </head>
+  <body>
+    <h1 style="margin-left: 15%;">Profile Details</h1>
+    <div style="margin-left: 35%;margin-top: 7%;">
+        <div id="card">
+  
+	
+    
+            <div >
+            <div class="column">
+              <div style="margin-top: 30px;display:flex;"> 
+            <p style="margin-right: 10px;"> First Name:</p>
+             <p>{{fname}}
+            </p> 
+               </div>
+        
+            <div style="margin-top: 30px;display:flex;"> 
+            <p style="margin-right: 10px;"> Last Name:</p>
+             <p>{{lname}}
+            </p> 
+               </div>
+        
+            <div style="margin-top: 30px;display:flex;"> 
+                <p style="margin-right: 10px;"> City:</p>
+                 <p>{{city}}
+                </p> 
+            </div>
+        
+            <div style="margin-top: 30px;display:flex;"> 
+              <p style="margin-right: 10px;"> Phone:</p>
+               <p>{{mobile}}
+              </p> 
+            </div>
+          </div>
+          <div class="column" style="margin-left: 17%;">
+            <div style="margin-top: 30px;display:flex;"> 
+              <p style="margin-right: 10px;"> Street:</p>
+               <p>{{street}}
+              </p> 
+              </div>
+              
+              <div style="margin-top: 30px;display:flex;"> 
+                <p style="margin-right: 10px;"> State:</p>
+                 <p>{{state}}
+                </p> 
+              </div>
+        
+              <div style="margin-top: 30px;display:flex;"> 
+                <p style="margin-right: 10px;"> Pincode:</p>
+                 <p>{{pincode}}
+                </p> 
+                </div>
+        
+                <div style="margin-top: 30px;display:flex;"> 
+                  <p style="margin-right: 10px;"> Country:</p>
+                   <p>{{country}}
+                  </p> 
+                </div>  
+          </div>
+          </div>
+        
+        </div>
+        
+    </div>
+    <nav class="mainmenu">
+      <div class="sidebar-logo">
+        VENDOR PORTAL
+        </div>
+      <ul>
+        <li class="dropdown"  ><a><i class="fa fa-users fa-2x" style="padding-right: 10px;"></i>Profile <span>&rsaquo;</span></a>
+        <ul>
+          <li><a routerLink="/details">View</a></li>
+          <li><a routerLink="/detailsupdate">Edit</a></li>
+        </ul>
+        </li>
+        <li class="dropdown"><a> <i class="fa fa-laptop fa-2x" style="padding-right: 10px;"></i>Dashboard <span>&rsaquo;</span></a>
+           <ul>
+              <li><a routerLink="/request">Request for Quotation</a></li>
+              <li><a routerLink="/purchase">Purchase Order</a></li>
+              <li><a routerLink="/goods">Goods Receipt</a></li>
+            </ul>
+        </li>
+        <li class="dropdown"><a><i class="fa fa-bar-chart-o fa-2x" style="padding-right: 10px;"></i> Finanicial sheet <span>&rsaquo;</span></a>
+           <ul>
+           <li><a routerLink="/invoicee">Invoice details</a></li>
+           <li><a routerLink="/payment">Payments and aging</a></li>
+           <li><a routerLink="/creditmemo">Credit memo</a></li>
+           <li><a routerLink="/debitmemo">Debit memo</a></li>
+           </ul>
+        </li>
+       
+        
+      </ul>
+  
+    </nav>
+    <nav >
+    <ul>
+     
+       <a href="#" class="logout">
+         <div style="display: flex;">
+           <div style="padding-right: 10px;"><i class="fa fa-power-off fa-2x"></i></div>
+           <div> Logout</div>
+         </div>
+             
+       </a>
+  
+     
+   </ul>
+  </nav>
+  
+  </body>
+  </html>
+  
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
